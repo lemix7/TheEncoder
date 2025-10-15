@@ -74,7 +74,7 @@ def get_todo_status() -> Dict[str, bool]:
 
 
 def render_sidebar():
-    """Render sidebar with TODO checklist and settings."""
+    """Render sidebar with TODO checklist and settings"""
     st.sidebar.title("📊 SPSS Prep Tool")
     st.sidebar.markdown("---")
     
