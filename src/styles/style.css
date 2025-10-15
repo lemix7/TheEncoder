@@ -1,0 +1,227 @@
+/* Color Variables */
+:root {
+  --color-primary: #181818;
+  --color-secondary: #228ef5;
+  --color-gray: #68686837;
+  --color-text: #000000;
+  --background: #101112;
+}
+
+.st-emotion-cache-13k62yr {
+  background-color: var(--color-primary);
+}
+
+/* Navbar Styles */
+
+.navbar {
+  background: var(--color-primary);
+  padding: 10px 60px;
+  margin: 0;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  position: fixed;
+  display: flex;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 999999;
+  width: 100%;
+  border-bottom: 1px white solid;
+}
+
+.navbar h3 {
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+
+.stAppViewContainer.appview-container.st-emotion-cache-1yiq2ps.e4man110 {
+  padding: 0 0 0 60px;
+}
+
+/* Step Headers Styling */
+#step-1-upload-excel-file {
+  font-size: 3rem;
+  font-weight: 700;
+  margin: 0;
+  padding: 0;
+}
+
+/* step subtitle */
+.st-emotion-cache-9rsxm2.et2rgd20 {
+  font-size: 1.1rem;
+  font-weight: 300;
+}
+
+/* File uploader container  */
+.st-emotion-cache-1k9kca4.e16n7gab0 {
+  border-radius: 1rem;
+  margin-top: 2rem;
+  padding: 1rem;
+  border: 1px solid var(--color-secondary);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  padding: 2rem 4rem;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  background-color: var(--color-gray);
+}
+
+/* file uploader drag and drop container  */
+.st-emotion-cache-i0nc7r.e16n7gab1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  font-size: 1.5rem;
+}
+
+/* drag and drop and subtitle container  */
+.st-emotion-cache-kt79cc.e16n7gab5 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* file upload icon */
+.e1t4gh341.st-emotion-cache-6rlrad.ex0cdmw0 {
+  width: 70px;
+  height: 70px;
+  color: var(--color-secondary);
+}
+
+/* drag and drop text */
+.st-emotion-cache-ysg2um.e16n7gab3 {
+  font-weight: 600;
+}
+
+/* Sidebar container  */
+.st-emotion-cache-1csi29a.e6f82ta2 {
+  background-color: var(--color-primary);
+}
+
+/* Layout: Sidebar 30%, Main 70% (fixed) */
+[data-testid="stSidebar"] {
+  width: 20% !important;
+  min-width: 20% !important;
+  max-width: 20% !important;
+  flex: 0 0 20% !important;
+}
+
+[data-testid="stMain"] {
+  width: 80% !important;
+  max-width: 80% !important;
+  flex: 0 0 80% !important;
+}
+
+/* Remove/disable sidebar sizing drag handle and collapse button */
+[data-testid="stSidebarResizeHandle"],
+[data-testid="stSidebarCollapseButton"],
+[aria-label="Sidebar resizer"],
+[data-testid="stSidebarResizer"] {
+  display: none !important;
+}
+
+/* Sidebar cards and checklist styling */
+.sidebar-card {
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 16px;
+  padding: 18px 16px;
+  margin: 12px 8px 16px 8px;
+}
+
+.sidebar-card-title {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-weight: 700;
+  font-size: 1.1rem;
+}
+
+.sidebar-card-title .dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: #38bdf8; /* cyan dot */
+  display: inline-block;
+}
+
+.checklist {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-top: 14px;
+}
+
+.check-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 0.98rem;
+}
+
+.check-item .ci-box {
+  width: 20px;
+  height: 20px;
+  border-radius: 6px;
+  border: 2px solid rgba(255, 255, 255, 0.25);
+  display: inline-block;
+}
+
+.check-item.completed .ci-icon {
+  width: 20px;
+  height: 20px;
+  border-radius: 6px;
+  background: rgba(56, 189, 248, 0.15);
+  color: #22d3ee;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.9rem;
+}
+
+.check-item.active {
+  background: rgba(34, 129, 197, 0.07);
+  border: 1px solid rgba(34, 126, 197, 0.25);
+  padding: 12px;
+  border-radius: 12px;
+}
+
+.check-item .ci-text {
+  line-height: 1.3;
+}
+
+/* Hide Streamlit's default header */
+.stApp > header {
+  display: none;
+}
+
+/* Adjust main content and sidebar to account for fixed navbar */
+.stApp {
+  padding-top: 60px; /* Match navbar height */
+}
+
+.main .block-container {
+  padding-top: 1rem;
+}
+
+/* Ensure sidebar is also pushed down */
+.stSidebar {
+  padding-top: 60px !important; /* Match the main app padding */
+}
+
+/* Make sure navbar appears above all Streamlit elements */
+.stApp > div:first-child {
+  z-index: 1 !important;
+}
+
+/* Override any Streamlit z-index values that might interfere */
+.stApp > header,
+.stApp > div[data-testid="stHeader"] {
+  z-index: 1 !important;
+}
